@@ -113,7 +113,7 @@ def build(app: Module) -> None:
 
     # Re-attach because picking might have added new footprints
     # Many nodes gain their footprints from picking, meaning we'll gather more now
-    transformer.attach(check_unattached=True)
+    transformer.attach(check_unattached_fps=True)
 
     # Write Netlist ------------------------------------------------------------
     attach_random_designators(G)
